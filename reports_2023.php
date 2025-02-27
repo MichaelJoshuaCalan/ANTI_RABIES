@@ -80,24 +80,67 @@ include"db_conn.php";
   .total_output h5{
     font-size: 30px;
   }
+  .header {
+      border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:green;
+    height: 25vh;
+    width: 100%;
+background-image: linear-gradient(green,white);    
+}
+
+    .header nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .title {
+        max-width: 70vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title p {
+        background-color: aliceblue;
+        font-size: 1.5em;
+        margin: 10px 0;
+        color: green;
+        font-weight: bolder;
+    }
 </style>
 
 <body class="toggle-sidebar">
-
+<body>
+  
+</body>
   <!-- ======= Header ======= -->
   
-        <div class="logo_office" style="display:flex;justify-content:center;align-items:center;height: 27.3vh;margin-top:-17px;width:100%;background-image: linear-gradient(green, white);">
-            <img src="img/1.png" width="320px" height="180px" alt="" style="margin-right:24%;z-index:1;position:absolute;" >
-            <h1 style="border:5px solid; width:24%;color:white; font-weight:bolder;padding:15px;text-align:center;background-color:green;z-index:0;position:relative;">KOBE BRYANT</h1>
-            <img src="img/2.png" width="320px" height="180px" alt="" style="margin-right:-24%;z-index:1;position:absolute;">
-          </div>
+  <div class="header">
+        <header>
+            <nav>
+                <img src="img/1.png" alt="" width="125px" height="120px" style="margin-right:-20px;z-index: 1;">
+                <div class="title">
+                    <p>PROVINCIAL HEALTH OFFICE</p>
+                    <p>&nbsp;&nbsp;ANIMAL BITE TREATMENT CENTER&nbsp;&nbsp;</p>
+                </div>
+                <img src="img/2.png" alt="" width="125px" height="120px" style="margin-left:-20px;z-index:1;">
+            </nav>
+        </header>
+    </div>
+
   <main id="main" class="main">
     <section class="section">
       <div class="row" style="display:flex;align-items:center;justify-content: center;margin-top:-5%;">
         <div class="col-lg-6" style="width:90%;">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title" style="display: flex;justify-content:space-between">Monthy Report (2023) <a class="back" href="table.php" style="font-size:30px;"><i class="bi bi-arrow-bar-left"></i>&nbsp;Back</a></h5>
+              <h5 class="card-title" style="display: flex;justify-content:space-between">Monthy Report (2023) 
+                <a class="back" href="record_s.php" style="font-size:30px;"><i class="bi bi-arrow-bar-left"></i>&nbsp;Back</a></h5>
                 <div class="total">
                   <?php 
                     include "db_conn.php";
